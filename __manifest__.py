@@ -27,6 +27,7 @@ Long description of module's purpose
         'views/res_partner_bank_inherit_views.xml',
         'views/bank_views_extended.xml',
         'views/res_partner_extended.xml',
+        'views/email_templates.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
