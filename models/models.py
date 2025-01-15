@@ -96,12 +96,12 @@ class SupplierRegistration(models.TransientModel):
         vals['child_ids'] = []
         vals['bank_ids'] = []
         if self.contact_person_title:
-            vals['child_ids'].append(0, 0, {
+            vals['child_ids'].append((0, 0, {
                 'name': self.contact_person_title,
                 'email': self.contact_email,
                 'phone': self.contact_phone,
                 'type': 'contact',
-            })
+            }))
         if self.authorized_person_name:
             vals['child_ids'].append((0, 0, {
                 'name': self.authorized_person_name,
